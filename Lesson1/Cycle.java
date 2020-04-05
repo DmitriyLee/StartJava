@@ -20,7 +20,7 @@ public class Cycle {
 				System.out.println("Число " + result + " являеться нечётным");
 			}
 			counter++;
-		} while(counter <= 4);
+		} while(counter < 4);
 		System.out.println ("11 + 2 = 13");
 	}
 }
