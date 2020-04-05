@@ -1,24 +1,26 @@
 public class Cycle {
 	public static void main(String[] args) {
-		for (int isFor = 0; isFor <= 20; isFor++) {
-			System.out.println("It's right! - " + isFor);
+		for (int i = 0; i <= 20; i++) {
+			System.out.println("It's right! - " + i);
 		}
-		int isWhile = 6;
-		while (isWhile >= -6) {
-			System.out.println(isWhile + " - Yeah!");
-			isWhile = isWhile - 2;
+
+		int i = 6;
+		while (i >= -6) {
+			System.out.println(i + " - Yeah!");
+			i -= 2;
 		}
-		int isDoWhile = 0;
+
+		int counter = 0;
 		int result = 10;
 		do {
-			result = result + isDoWhile;
+			result = result + counter;
 			if(result % 2 == 0) {
 				System.out.println("Число " + result + " являеться чётным");
 			} else {
 				System.out.println("Число " + result + " являеться нечётным");
 			}
-			isDoWhile++;
-		} while(isDoWhile <= 4);
-		System.out.println ("10 + 1 + 2 + 3 + 4  = " + result);
+			counter++;
+		} while(counter <= 4);
+		System.out.println ("11 + 2 = 13");
 	}
 }
