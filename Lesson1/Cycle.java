@@ -1,7 +1,7 @@
 public class Cycle {
 	public static void main(String[] args) {
 		for (int i = 0; i <= 20; i++) {
-			System.out.println("It's right! - " + i);
+			System.out.println("Number - " + i);
 		}
 
 		int i = 6;
@@ -10,17 +10,13 @@ public class Cycle {
 			i -= 2;
 		}
 
-		int counter = 0;
+		int counter = 9;
 		int result = 10;
-		do {
+		do{
 			result = result + counter;
-			if(result % 2 == 0) {
-				System.out.println("Число " + result + " являеться чётным");
-			} else {
-				System.out.println("Число " + result + " являеться нечётным");
-			}
-			counter++;
-		} while(counter <= 4);
-		System.out.println ("11 + 2 = 13");
+			counter += 2;
+			System.out.println(counter + " - neChet");
+		}while(counter<19);
+		System.out.println("11 + 13 + 15 + 17 + 19 = " + result);
 	}
 }
