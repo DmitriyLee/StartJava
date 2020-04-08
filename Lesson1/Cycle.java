@@ -15,7 +15,7 @@ public class Cycle {
 		do{
 			result = result + counter;
 			counter += 2;
-			System.out.println(counter + " - neChet");
+			System.out.println(counter + " - Odd number");
 		}while(counter<19);
 		System.out.println("11 + 13 + 15 + 17 + 19 = " + result);
 	}
