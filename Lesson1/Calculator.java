@@ -25,8 +25,7 @@ public class Calculator {
 		}
 
 		else if (sign == '^') {//возведение в степень
-			int exponent = 3;
-				exponent = exponent * a;
+			int exponent = a ^ b;
 			System.out.println(exponent);
 		}
 	}
