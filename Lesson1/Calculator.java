@@ -18,7 +18,7 @@ public class Calculator {
 			System.out.println(moduldivision);
 		} else if (sign == '^') {//побитовое исключающeе OR (или)
 			int exponent = a ^ b;
-			System.out.println(b);
+			System.out.println(exponent);
 			System.out.println("Number: " + a + " in binary notation: " + Integer.toBinaryString(a));
 			System.out.println("Number: " + b + " in binary notation: " + Integer.toBinaryString(b));
 			System.out.println("Number: " + exponent + " in binary notation: " + Integer.toBinaryString(exponent));
