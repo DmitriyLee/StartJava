@@ -1,8 +1,8 @@
 public class Calculator {
 	public static void main(String[] args) {
-		int a = 8;
+		int a = 20;
 		int b = 5;
-		char sign = '^';
+		char sign = '^';//(+, -, *, /, ^, %)
 
 		if (sign == '+') {// сложение
 			int sum = a + b;
@@ -13,15 +13,20 @@ public class Calculator {
 		} else if (sign == '*') {//умножение
 			int multiply = a * b;
 			System.out.println(multiply);
+		} else if (sign == '/') {//деление
+			int multiply = a / b;
+			System.out.println(multiply);
 		} else if (sign == '%') {//деление по модулю
 			int moduldivision = a % b;
 			System.out.println(moduldivision);
-		} else if (sign == '^') {//побитовое исключающeе OR (или)
-			int exponent = a ^ b;
-			System.out.println(exponent);
-			System.out.println("Number: " + a + " in binary notation: " + Integer.toBinaryString(a));
-			System.out.println("Number: " + b + " in binary notation: " + Integer.toBinaryString(b));
-			System.out.println("Number: " + exponent + " in binary notation: " + Integer.toBinaryString(exponent));
+		} else if (sign == '^') {//Возведение в степень
+				int result = 1;
+				int counter = 0;
+				while (counter < 5) {
+					result = result * 8;
+					counter++;
+				}
+				System.out.println(result);
 		}
 	}
 }
