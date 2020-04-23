@@ -23,7 +23,7 @@ public class Calculator {
 				int result = 1;
 				int counter = 0;
 				while (counter < 5) {
-					result = result * 8;
+					result = result * 20;
 					counter++;
 				}
 				System.out.println(result);
