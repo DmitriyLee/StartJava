@@ -13,10 +13,10 @@ public class Cycle {
 		int counter = 11;
 		int result = 0;
 		do {
-			result = result + counter;
+			result += counter;
 			System.out.println(counter + " - Odd number");
 			counter += 2;
-		} while(counter <= 20);
+		} while(counter <= 19);
 		System.out.println("11 + 13 + 15 + 17 + 19 = " + result);
 	}
 }

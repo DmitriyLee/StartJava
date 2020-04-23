@@ -9,8 +9,7 @@ public class ConditionalStatement {
 		if (male) {
 			System.out.println("Да! Я мужчина!");
 		}
-		boolean isMale = false;
-		if (isMale) {
+		if (!male) {
 			System.out.println("НЕ верно! Я женщина.");
 		}
 

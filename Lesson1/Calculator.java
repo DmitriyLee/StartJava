@@ -5,26 +5,26 @@ public class Calculator {
 		char sign = '^';//(+, -, *, /, ^, %)
 
 		if (sign == '+') {// сложение
-			int sum = a + b;
-			System.out.println(sum);
+			// int sum = a + b;
+			System.out.println(a + b);
 		} else if (sign == '-') {//вычитание
-			int minus = a - b;
-			System.out.println(minus);
+			// int minus = a - b;
+			System.out.println(a - b);
 		} else if (sign == '*') {//умножение
-			int multiply = a * b;
-			System.out.println(multiply);
+			// int multiply = a * b;
+			System.out.println(a * b);
 		} else if (sign == '/') {//деление
-			int multiply = a / b;
-			System.out.println(multiply);
+			// int multiply = a / b;
+			System.out.println(a / b);
 		} else if (sign == '%') {//деление по модулю
-			int moduldivision = a % b;
-			System.out.println(moduldivision);
+			// int moduldivision = a % b;
+			System.out.println(a % b);
 		} else if (sign == '^') {//Возведение в степень
-				int result = 1;
-				int counter = 0;
-				while (counter < 5) {
-					result = result * 20;
-					counter++;
+			int result = 1;
+			int counter = 0;
+			while (counter < b) {
+				result *= a;
+				counter++;
 				}
 				System.out.println(result);
 		}
