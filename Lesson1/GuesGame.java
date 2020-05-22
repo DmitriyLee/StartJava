@@ -1,9 +1,9 @@
 public class GuesGame {
-	public static int playerNumber = 50;//97
-	public static int a = 53;//97
-	public static int c = 99;//13
-	public static int m = 83;//64
-	public static int b = 2;//1
+	public static int playerNumber = 50;
+	public static int a = 53;
+	public static int c = 99;
+	public static int m = 83;
+	public static int b = 2;
 	public static int receivedRandomNumber() {
 		b = ((a * b) + c) % m;
 		return b;
@@ -18,5 +18,4 @@ public class GuesGame {
 			System.out.println("Вы угадали!");
 		}
 	}
-
 }
