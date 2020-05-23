@@ -1,10 +1,10 @@
 public class GuessGame {
-	public static int playerNumber = 23;
-	public static int a = 53;
+	public static int playerNumber = 1;
+	public static int a = 64;
 	public static int c = 99;
 	public static int m = 83;
 	public static int b = 2;
-	private static int receivedRandomNumber() {
+	public static int receivedRandomNumber() {
 		b = ((a * b) + c) % m;
 		return b;
 		}
@@ -16,6 +16,7 @@ public class GuessGame {
 			System.out.println("Введенное вами число меньше того, что загадал компьютер");
 		} else {
 			System.out.println("Вы угадали!");
+			break;
 		}
 	}
 }
