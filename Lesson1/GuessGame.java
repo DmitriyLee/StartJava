@@ -7,11 +7,11 @@ public class GuessGame {
 
 	public static void main(String[] args) {
 		for (int i = 0; i <= 100; i++) {
-			if (compNum > numberRandomPlayer()) {
-				System.out.print(compNum + " " + ">" + " " + numberRandomPlayer());
+			if (compNum > inputNumber()) {
+				System.out.print(compNum + ">" + inputNumber());
 				System.out.println(" = " + "Введенное вами число меньше того, что загадал компьютер");
-			} else if (compNum < numberRandomPlayer()) {
-				System.out.print(compNum + " " + "<" + " " + numberRandomPlayer());
+			} else if (compNum < inputNumber()) {
+				System.out.print(compNum + "<" + inputNumber());
 				System.out.println(" = " + "Введенное вами число больше того, что загадал компьютер");
 			} else {
 				System.out.print(compNum);
@@ -21,7 +21,7 @@ public class GuessGame {
 		}
 	}
 
-	private static int numberRandomPlayer() {
+	private static int inputNumber() {
 		playerNum = ((a * playerNum) + c) % m;
 		return playerNum;
 	}
