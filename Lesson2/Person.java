@@ -6,7 +6,7 @@
 
 public class Person { 
 
-	String manName = "Mark";
+	String name = "Mark";
 	String gender = "Man";
 	float height = 73.2f;
 	float weight = 79.4f;
